@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Play with Material</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="navbar navbar-expand-lg navbar-light bg-primary text-white">
+            <div class="container">
+                <a href="#" class="navbar-brand text-white vertical-middle">
+                    <h3>חדשות מהירות</h3>
+                </a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#!"><i class="material-icons">refresh</i></a></li>
+                    <li class="nav-item dropdown">
+                        <a id="settings-menu" class="nav-link text-white" role="button" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="settings-menu">
+                            <li class="dropdown-item"><a href="#!">one</a></li>
+                            <li class="dropdown-item"><a href="#!">two</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item"><a href="#!">three</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page" class="container mt-3">
+        <!-- main article -->
+        <div id="main-article" class="row text-sm-right mb-5">
+            <div class="col col-sm-12 px-0">
+                <img id="main-image" class="float-left mr-5" src="">
+                <h1></h1>
+                <details class="col col-sm-12 pr-0">
+                    <summary class="p-2"></summary>
+                    <div></div>
+                </details>
+            </div>
+        </div>
+        <!-- second row -->
+        <div id="second-row" class="row">
+            <!-- flashes -->
+            <div id="flashes" class="col col-sm-12 col-md-3">
+                <div id="blue-feed" class="row bg-primary text-white text-center mx-0">
+                    <div class="col col-sm-12 center-align px-0">
+                        <h6>
+                            הפיד הכחול
+                        </h6>
+                    </div>
+                </div>
+                <!-- flash list -->
+                <div id="flash-list" class="list-unstyled text-right marquee"></div>
+            </div>
+            <!-- topics -->
+            <div id="topics" class="col col-sm-12 col-md-2 btn-group-vertical"></div>
+            <!-- articles -->
+            <div id="articles" class="col col-sm-12 col-md-7 d-flex flex-column align-items-start"></div>
+        </div>
+    </div>
+
+    <div id="scroll">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
